@@ -15,8 +15,7 @@ import com.example.reddit.domain.IDeliveryManager
 import com.example.reddit.domain.IMapper
 import com.example.reddit.domain.IPostCallback
 import com.example.reddit.domain.model.Post
-import ru.startandroid.develop.p1201_clickwidget.data.mappers.RemotePostMapper
-import java.util.*
+import com.example.reddit.data.mappers.RemotePostMapper
 
 class DeliveryPostManager : IDeliveryManager<Post> {
     private val TAG: String = "DeliveryPostManager"

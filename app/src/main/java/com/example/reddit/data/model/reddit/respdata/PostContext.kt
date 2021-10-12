@@ -342,6 +342,10 @@ class PostContext {
     @Expose
     private var author: String? = null
 
+    fun getAuthor(): String? {
+        return author
+    }
+
     @SerializedName("discussion_type")
     @Expose
     private var discussionType: Any? = null
@@ -349,6 +353,20 @@ class PostContext {
     @SerializedName("num_comments")
     @Expose
     private var numComments: Int? = null
+
+    fun getNumComments(): Int? {
+        return numComments
+    }
+    fun getThumbnail(): String? {
+        return thumbnail
+    }
+
+    fun getPreview(): Preview? {
+        return preview
+    }
+    fun getCreatedUtc(): Long? {
+        return createdUtc
+    }
 
     @SerializedName("send_replies")
     @Expose
